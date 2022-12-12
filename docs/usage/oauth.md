@@ -81,7 +81,7 @@ ShopifyAPI::Utils::SessionUtils.load_current_session(auth_header: <auth-header>,
 ```
 
 Accepted arguments:
-| Parameter   | Type                      | Notes                                                                                                                                                                     |
+| Parameter   | Type                      | Notes |
 | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `auth_header`   | `String`    | JWT token will be extracted from `auth_header` to load session for embedded apps. If JWT token is not provided this methods will try with `cookies`. Only required if trying to load, an embedded session. |
 | `cookies`   | `Hash(String, String)`    | The cookies from the HTTP request. A session cookie named `shopify_app_session` is used to load session for non-embedded apps. Can be omitted if loading and embedded session without falling back on cookies |
